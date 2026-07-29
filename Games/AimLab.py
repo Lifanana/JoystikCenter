@@ -31,9 +31,9 @@ class PrecisionLab:
         if pygame.joystick.get_count() > 0:
             self.joystick = pygame.joystick.Joystick(0)
             self.joystick.init()
-            print(f"ג'ויסטיק מחובר: {self.joystick.get_name()}")
+            print(f"✅ Connected Succesfully to {self.joystick.get_name()}")
         else:
-            print("אזהרה: לא נמצא ג'ויסטיק מחובר! המשחק יעבוד עם העכבר לבדיקה.")
+            print("❌ No Joystick Found! Game will work with mouse for testing.")
 
         # מיקום כוונת
         self.cross_x = SCREEN_WIDTH // 2
