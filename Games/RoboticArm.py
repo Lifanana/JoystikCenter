@@ -29,7 +29,7 @@ class RoboticArmGame:
         if pygame.joystick.get_count() > 0:
             self.joystick = pygame.joystick.Joystick(0)
             self.joystick.init()
-            print(f"ג'ויסטיק מחובר: {self.joystick.get_name()}")
+        print(f"✅ Connected Succesfully to {self.joystick.get_name()}")
 
         # פרמטרים של הזרוע הרובוטית
         self.base_x = SCREEN_WIDTH // 2

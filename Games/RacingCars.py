@@ -28,7 +28,7 @@ class RacingGame:
         if pygame.joystick.get_count() > 0:
             self.joystick = pygame.joystick.Joystick(0)
             self.joystick.init()
-            print(f"ג'ויסטיק מחובר: {self.joystick.get_name()}")
+            print(f"✅ Connected Succesfully to {self.joystick.get_name()}")
 
         # פיזיקה ומיקום של המכונית
         self.car_x = 500.0
